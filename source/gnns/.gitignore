@@ -1,0 +1,11 @@
+__pycache__
+.ipynb_checkpoints
+.idea
+.DS_Store
+
+/data/*
+/experiments/*
+/scripts/*
+/notebooks/*
+
+!.gitkeep

@@ -1,0 +1,18 @@
+name: gnn
+channels:
+  - pytorch
+  - nvidia
+  - dglteam/label/th23_cu121
+dependencies:
+  - python=3.11
+  - setuptools=68
+  - tqdm=4.66
+  - pyyaml=6
+  - pydantic=2.5
+  - numpy=1.26
+  - pandas=2.2
+  - scikit-learn=1.5
+  - pytorch=2.3
+  - pytorch-cuda=12.1
+  - torchdata=0.7
+  - dgl=2.3
