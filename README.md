@@ -1,6 +1,7 @@
 # TabGraphs: A Benchmark and Strong Baselines for Learning on Graphs with Tabular Node Features
 
-### NOTE! This work is in progress, and the proposed benchmark will be updated.
+> [!IMPORTANT]
+> This project has been superseded by [GraphLand](https://arxiv.org/abs/2409.14500) and is no longer maintained. Please visit [the GraphLand repository](https://github.com/yandex-research/graphland) for our new codebase and new and extended versions of our datasets.
 
 ## About the datasets
 
@@ -26,7 +27,8 @@ Besides that, we put `info.yaml` with the necessary information about dataset:
 - `cat_feature_names` — list of categorical feature names
 - `bin_feature_names` — list of binary feature names
 
-**Note!** The proposed TabGraphs benchmark is released under the CC BY 4.0 International license.
+> [!NOTE]
+> The proposed TabGraphs benchmark is released under the CC BY 4.0 International license.
 
 ## About the source code
 
@@ -46,4 +48,5 @@ The only changes that were made in the original repositories are related to the 
 3. Run notebook `notebooks/convert-graph-datasets.ipynb` to convert the provided graph datasets (probably with NFA and/or DWE) into the format required by `tabular` baselines and specialized models `bgnn` and `ebbs`.
 4. Run experiments according to the instructions provided in the corresponding directories.
 
-**Note!** The source code for `tabular` baselines and `bgnn` model is distributed under the MIT license, and our code for `gnns` is also released under the same MIT license.
+> [!NOTE]
+> The source code for `tabular` baselines and `bgnn` model is distributed under the MIT license, and our code for `gnns` is also released under the same MIT license.
