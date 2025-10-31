@@ -33,10 +33,11 @@ class Dataset:
             info = yaml.safe_load(file)
 
         features_df = pd.read_csv(f'data/{name}/features.csv', index_col=0)
+        targets_df = pd.read_csv(f'data/{name}/targets.csv', index_col=0)
         num_features = features_df[info['num_feature_names']].values.astype(np.float32)
         bin_features = features_df[info['bin_feature_names']].values.astype(np.float32)
         cat_features = features_df[info['cat_feature_names']].values.astype(np.float32)
-        targets = features_df[info['target_name']].values.astype(np.float32)
+        targets = targets_df[info['target_name']].values.astype(np.float32)
 
         if num_features.shape[1] > 0:
             if info['has_nans_in_num_features']:
